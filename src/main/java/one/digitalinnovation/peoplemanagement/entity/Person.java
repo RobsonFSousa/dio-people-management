@@ -30,7 +30,7 @@ public class Person {
     private String lastName;
 
     @Column(nullable = true)
-    private LocalDate dateBirth;
+    private LocalDate birthDate;
 
     @OneToMany(fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE })
     private List<Phone> phones;
