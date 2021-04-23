@@ -3,6 +3,7 @@ package one.digitalinnovation.peoplemanagement.controller;
 
 import one.digitalinnovation.peoplemanagement.dto.MessageResponsePersonDTO;
 import one.digitalinnovation.peoplemanagement.dto.request.PersonDTO;
+import one.digitalinnovation.peoplemanagement.entity.Person;
 import one.digitalinnovation.peoplemanagement.exception.PersonNotFoundException;
 import one.digitalinnovation.peoplemanagement.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,6 +38,11 @@ public class PersonController {
     @GetMapping("/{id}")
     public PersonDTO findById(@PathVariable Long id) throws PersonNotFoundException {
         return personService.findById(id);
+    }
+
+    @PutMapping("/{id}")
+    public MessageResponsePersonDTO updateById(@PathVariable Long id, @RequestBody PersonDTO personDTO) throws PersonNotFoundException {
+        return personService.updateById(id, personDTO);
     }
 
     @DeleteMapping("/{id}")
