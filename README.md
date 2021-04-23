@@ -1,2 +1,2 @@
-# dio-people-management
-API for managing people using SpringBoot
+# dio-person-management
+API for managing person using SpringBoot

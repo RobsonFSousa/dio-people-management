@@ -5,14 +5,14 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.4.5</version>
+		<version>2.3.10.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>one.digitalinnovation</groupId>
 	<artifactId>peoplemanagement</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>peoplemanagement</name>
-	<description>API for managing people using SpringBoot</description>
+	<description>API for managing person using SpringBoot</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
