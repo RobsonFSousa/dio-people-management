@@ -1,7 +1,7 @@
 package one.digitalinnovation.peoplemanagement.service;
 
 import lombok.AllArgsConstructor;
-import one.digitalinnovation.peoplemanagement.dto.MessageResponsePersonDTO;
+import one.digitalinnovation.peoplemanagement.dto.response.MessageResponsePersonDTO;
 import one.digitalinnovation.peoplemanagement.dto.request.PersonDTO;
 import one.digitalinnovation.peoplemanagement.entity.Person;
 import one.digitalinnovation.peoplemanagement.exception.PersonNotFoundException;
